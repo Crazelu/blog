@@ -49,7 +49,7 @@ class ResponsiveWidget extends StatelessWidget {
             floatingActionButton: floatingActionButton,
             bottomNavigationBar: bottomNavigationBar,
             backgroundColor:
-                backgroundColor ?? Theme.of(context).backgroundColor,
+                backgroundColor ?? Theme.of(context).colorScheme.background,
             resizeToAvoidBottomInset: resizeToAvoidBottomInset,
             appBar: appBar,
             drawer: drawer,

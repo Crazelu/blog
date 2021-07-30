@@ -7,26 +7,22 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveWidget(
-      builder: (size) => SizedBox(
-        height: size.height,
-        width: size.width,
-        child: Column(
-          children: [
-            Row(
+      builder: (size) => SafeArea(
+        child: DefaultTabController(
+          length: 5,
+          child: Container(
+            padding: EdgeInsets.only(top: 10.h),
+            height: size.height,
+            width: size.width,
+            child: Column(
               children: [
-                Column(
-                  children: [
-                    Text("Sunday 25 July"),
-                    Text("Blog"),
-                  ],
-                ),
-                //image container
-                Container(
-                  height: 50.h,
-                )
+                const Header(),
+                const CustomSpacer(flex: 8),
+                const CategoryTabBar(),
+                const CustomSpacer(flex: 8),
               ],
             ),
-          ],
+          ),
         ),
       ),
     );
