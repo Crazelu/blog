@@ -25,7 +25,7 @@ class _HeadlineCarouselState extends State<HeadlineCarousel>
       });
       return;
     }
-    int index = (scrollController.offset / context.screenWidth(.72)).ceil() - 1;
+    int index = (scrollController.offset / context.screenWidth(.71)).ceil() - 1;
     setState(() {
       currentIndex = index;
     });

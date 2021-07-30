@@ -32,9 +32,9 @@ class LatestBlogs extends StatelessWidget {
         CustomSpacer(),
         Expanded(
           child: ListView.builder(
-            itemCount: BlogPost.headlines.length,
+            itemCount: BlogPost.latest.length,
             itemBuilder: (_, index) {
-              return LatestBlogCard(post: BlogPost.headlines[index]);
+              return LatestBlogCard(post: BlogPost.latest[index]);
             },
           ),
         )

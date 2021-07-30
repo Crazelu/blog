@@ -16,6 +16,7 @@ class HomeView extends StatelessWidget {
             width: size.width,
             child: Column(
               children: [
+                const CustomSpacer(),
                 const Header(),
                 const CustomSpacer(flex: 8),
                 const CategoryTabBar(),
