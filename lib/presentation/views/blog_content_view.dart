@@ -22,6 +22,10 @@ class BlogContentView extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 fit: BoxFit.cover,
+                colorFilter: ColorFilter.mode(
+                  Color(0xff0c152a).withOpacity(.2),
+                  BlendMode.hardLight,
+                ),
                 image: NetworkImage(
                   post.coverImage,
                 ),
