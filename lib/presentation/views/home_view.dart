@@ -20,6 +20,7 @@ class HomeView extends StatelessWidget {
                 const CustomSpacer(flex: 8),
                 const CategoryTabBar(),
                 const CustomSpacer(flex: 8),
+                const HeadlineCarousel(),
               ],
             ),
           ),

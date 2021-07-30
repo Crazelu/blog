@@ -10,4 +10,8 @@ extension PaddingExtension on Widget {
         padding: EdgeInsets.symmetric(horizontal: 10.w),
         child: this,
       );
+  Widget get padIndictor => Padding(
+        padding: EdgeInsets.only(right: 10.w),
+        child: this,
+      );
 }

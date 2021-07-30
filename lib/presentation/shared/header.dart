@@ -37,7 +37,11 @@ class Header extends StatelessWidget {
           height: 40.h,
           width: 40.h,
           decoration: BoxDecoration(
-            color: Colors.red,
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage(
+                  "https://images.unsplash.com/photo-1594616838951-c155f8d978a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"),
+            ),
             borderRadius: BorderRadius.circular(10.w),
           ),
         )

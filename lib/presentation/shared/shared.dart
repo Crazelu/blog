@@ -4,3 +4,5 @@ export 'custom_spacer.dart';
 export 'category_tab_bar.dart';
 export 'padding.dart';
 export 'header.dart';
+export 'headline_carousel.dart';
+export 'package:blog/utils/utils.dart';

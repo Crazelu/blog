@@ -27,7 +27,7 @@ class _CategoryTabBarState extends State<CategoryTabBar> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 100.h,
+      height: 30.h,
       width: context.screenWidth(),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
@@ -50,7 +50,7 @@ class _CategoryTabBarState extends State<CategoryTabBar> {
                         : Theme.of(context).highlightColor,
                   ),
                 ),
-                CustomSpacer(flex: 1),
+                const CustomSpacer(flex: 1),
                 if (currentTab == index)
                   Container(
                     height: .8.h,
