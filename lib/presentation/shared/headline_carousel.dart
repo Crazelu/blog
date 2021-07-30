@@ -45,8 +45,9 @@ class _HeadlineCarouselState extends State<HeadlineCarousel>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Container(
-      height: 160.h,
+      height: 170.h,
       width: context.screenWidth(),
       child: Column(
         children: [

@@ -1,3 +1,4 @@
+import 'package:blog/models/blogpost.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../presentation/views/views.dart';
@@ -9,6 +10,14 @@ class RouteGenerator {
     switch (settings.name) {
       case HomeViewRoute:
         return _getPageRoute(HomeView());
+      case BlogContentViewRoute:
+        Object? post = settings.arguments;
+        if (post != null && post is BlogPost) {
+          return _getPageRoute(BlogContentView(
+            post: post,
+          ));
+        }
+        return _getPageRoute(_errorPage());
 
       default:
         return _getPageRoute(_errorPage());
