@@ -98,14 +98,14 @@ class HeadlineCard extends StatelessWidget {
                 const Spacer(),
                 Icon(
                   Icons.query_builder,
-                  size: 18.w,
-                  color: Theme.of(context).primaryColorLight.withOpacity(.9),
+                  size: 15.w,
+                  color: Theme.of(context).primaryColorLight.withOpacity(.7),
                 ),
-                const CustomSpacer(flex: 1.5, horizontal: true),
+                const CustomSpacer(flex: .8, horizontal: true),
                 Text(
                   post.time,
                   style: TextStyle(
-                    color: Theme.of(context).primaryColorLight.withOpacity(.9),
+                    color: Theme.of(context).primaryColorLight.withOpacity(.7),
                   ),
                 )
               ],
