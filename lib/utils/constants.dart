@@ -1,3 +1,3 @@
 //Navigation Routes
 
-const SplashScreenViewRoute = '/splash';
+const HomeViewRoute = '/home';

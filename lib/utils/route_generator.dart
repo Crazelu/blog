@@ -7,9 +7,8 @@ class RouteGenerator {
   ///Generates routes, extracts and passes navigation arguments.
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case SplashScreenViewRoute:
-        //TODO: Return Splash screen
-        return _getPageRoute(_errorPage());
+      case HomeViewRoute:
+        return _getPageRoute(HomeView());
 
       default:
         return _getPageRoute(_errorPage());
