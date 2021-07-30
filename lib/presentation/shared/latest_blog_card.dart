@@ -53,7 +53,7 @@ class LatestBlogCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                CustomSpacer(),
+                CustomSpacer(flex: 3),
                 Row(
                   children: [
                     Icon(
